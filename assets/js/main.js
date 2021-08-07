@@ -10,3 +10,24 @@ function arrow(){
         }
     });
 }
+
+orderCarousel = $("#orderCarousel");
+var carousel = new bootstrap.Carousel(orderCarousel,{
+    wrap: true,
+});
+
+$("#btn1").click(function(){
+    orderCarousel.carousel('pause');
+    orderCarousel.carousel(0)
+});
+
+$("#btn2").click(function(){
+    orderCarousel.carousel('pause');
+    orderCarousel.carousel(1)
+});
+
+$("#btn3").click(function(){
+    orderCarousel.carousel('pause');
+    orderCarousel.carousel(2)
+});
+
