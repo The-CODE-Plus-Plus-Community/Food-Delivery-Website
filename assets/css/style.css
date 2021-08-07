@@ -3,13 +3,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-.navbar-brand{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-}
 
-.nav-link{
-    font-family: 'Montserrat', sans-serif;
+.navbar-brand{
+    font-size: 1.5rem;
 }
 
 .input-group-text{
@@ -51,7 +47,11 @@ body{
 }
 
 .burger{
-    background-color: royalblue;
+    background-color: grey;
+}
+
+.deliveryBoy{
+    background-color: rgb(254, 202, 110);
 }
 
 .exCard{
@@ -75,12 +75,12 @@ body{
 }
 
 .btnCarousel{
-    border: 1px solid rgb(254, 202, 110);
+    border: 1px solid rgb(206, 212, 218);
     background: none;
 }
 
 .btnCarousel:hover{
-    border: none;
+    border: 1px solid rgb(254, 202, 110);
     background-color: rgb(254, 202, 110);
     color: white;
 }
@@ -96,9 +96,29 @@ body{
     background-color: rgb(236, 233, 233);
 }
 
+.socials{
+    display: inline-block;
+    border-radius: 50%;
+    color: black;
+    border: 0.5px solid black;
+    padding: 0.5em 0.5em;
+}
+
+.socials:hover{
+    border: 0.5px solid rgb(254, 202, 110);
+    background-color: rgb(254, 202, 110);
+    color: white;
+}
+
 .carousel-item img{
     width: 150px;
     border-radius: 32px;
+}
+
+.btnActive{
+    border: 1px solid rgb(254, 202, 110);
+    background-color: rgb(254, 202, 110);
+    color: white;
 }
 
 @media screen and (min-width: 768px){

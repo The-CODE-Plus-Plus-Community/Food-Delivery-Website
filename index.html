@@ -18,7 +18,7 @@
 
     <body>
         <!--navbar-->
-        <nav class="navbar navbar-light navbar-expand-sm">
+        <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: white;">
             <div class="container-fluid navigation">
                 <a href="#" class="navbar-brand d-flex align-items-center">
                     <img src="./Design/restaurantLogo.png" alt="Logo" width="40px" height="40px"><span>Order Mob</span>
@@ -38,14 +38,14 @@
                         </div>
                         <div class="ms-3 ms-lg-5"> 
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#explore" class="nav-link">
                                     <span>Restaurants</span>
                                 </a>
                             </li>
                         </div>
                         <div class="ms-3 ms-lg-5">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="#food" class="nav-link">
                                     <span>Foods</span>
                                 </a>
                             </li>
@@ -85,7 +85,7 @@
         <!--end of navbar-->
 
         <!--main div-->
-        <div class="container mb-5">
+        <div class="container mb-5 mt-5">
             <div class="row align-items-center">
                 <div class="col-12 col-sm-6 order-1 order-sm-0">
                     <img src="./Design/juice.png" alt="JuiceBox">
@@ -152,7 +152,7 @@
         <!--end of burger-->
 
         <!--explore-->
-        <div class="container py-5 overflow-hidden">
+        <div class="container py-5" id="explore">
             <h2 class="mb-5 mt-4">Explore Your Nearby Restaurants</h2>
             <div class="row g-3">
                 <div class="col-6 col-sm-3">
@@ -230,7 +230,7 @@
         <!--end of order-->
 
         <!--favourites-->
-        <div class="container-fluid py-3">
+        <div class="container-fluid py-5 mb-5" id="food">
             <div class="container">
                 <div class="row text-center">
                     <h1 class="py-5">Most Ordered Food in New York</h1>
@@ -239,7 +239,7 @@
                     <div class="carousel-inner">
 
                       <!--carousel1-->
-                      <div class="carousel-item active">
+                      <div class="carousel-item active" id="carousel1">
                         <div class="container-fluid">
                             <div class="row gx-5 gy-3">
                                 <!--item1-->
@@ -355,7 +355,7 @@
                       </div>
 
                       <!--carousel2-->
-                      <div class="carousel-item">
+                      <div class="carousel-item" id="carousel2">
                         <div class="container-fluid">
                             <div class="row gx-5 gy-3">
                                 <!--item1-->
@@ -471,7 +471,7 @@
                       </div>
 
                       <!--carousel3-->
-                      <div class="carousel-item">
+                      <div class="carousel-item" id="carousel3">
                         <div class="container-fluid">
                             <div class="row gx-5 gy-3">
                                 <!--item1-->
@@ -588,12 +588,157 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center carouselControl py-3">
-                    <button class="btn btnCarousel me-2" id="btn1">1</button>
-                    <button class="btn btnCarousel me-2" id="btn2">2</button>
-                    <button class="btn btnCarousel me-2" id="btn3">3</button>
+                    <button class="btn btnCarousel me-4 btnActive" id="btn1">1</button>
+                    <button class="btn btnCarousel me-4" id="btn2">2</button>
+                    <button class="btn btnCarousel me-4" id="btn3">3</button>
                     <button class="btn">See More Foods</button>
                 </div>
             </div>
+        </div>
+        <!--end of favourites-->
+
+        <!--delivery-->
+        <div class="container-fluid mb-5 deliveryBoy mt-5">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-12 col-sm-4 align-self-center order-1 order-sm-1 py-3">
+                        <h1>Want To Earn Extra<br>With Us Join As a<br>Delivery Boy</h1>
+                        <br>
+                        <small>We are the fastest and favourite food delivery service all over the world. Search for your favourite food or restaurant in your area.</small><br><br>
+                        <button type="button" class="btn" style="background-color: grey;">Apply Now</button>
+                    </div>
+                    <div class="col-12 col-sm-8 d-flex justify-content-center order-0 order-sm-1">
+                        <img src="./Design/deliveryEarn.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of delivery-->
+
+        <!--mobile-->
+        <div class="container-fluid mb-4 mt-5">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-7 d-flex justify-content-center">
+                        <img src="./Design/mobile.png" alt="Order From Mobile" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-sm-5">
+                        <h1 class="mb-3">Its Now More Easy to<br>Order by Our Mobile App</h1>
+                        <br>
+                        <small>All you need to do is download one of the best food delivery apps, make a and most companies are opting for mobile app development for food delivery.</small>
+                        <br><br><br>    
+                        <button class="btn" type="button">Order Food Now</button>
+                    </div>
+                </div>
+        </div>
+        <!--end of mobile-->
+
+        <!--countries-->
+        <div class="container py-5 mb-sm-3">
+            <div class="row text-center">
+                <h1 class="py-5">We are available in</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-sm-3">
+                    <div class="d-flex align-items-center p-2" style="border-radius: 8px;">
+                        <img src="./Design/australia.png" width="32px" class="img-fluid" style="float: left;">&#160;&#160;<h5 style="margin-bottom: 0;">Australia</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="d-flex align-items-center p-2" style="border-radius: 8px;">
+                        <img src="./Design/austria.png" width="32px" class="img-fluid" style="float: left;">&#160;&#160;<h5 style="margin-bottom: 0;">Austria</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="d-flex align-items-center p-2" style="border-radius: 8px;">
+                        <img src="./Design/bahrain.png" width="32px" class="img-fluid" style="float: left;">&#160;&#160;<h5 style="margin-bottom: 0;">Bahrain</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="d-flex align-items-center p-2" style="border-radius: 8px;">
+                        <img src="./Design/bangladesh.png" width="32px" class="img-fluid" style="float: left;">&#160;&#160;<h5 style="margin-bottom: 0;">Bangladesh</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="d-flex align-items-center p-2" style="border-radius: 8px;">
+                        <img src="./Design/canada.png" width="32px" class="img-fluid" style="float: left;">&#160;&#160;<h5 style="margin-bottom: 0;">Canada</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="d-flex align-items-center p-2" style="border-radius: 8px;">
+                        <img src="./Design/northern-cyprus.png" width="32px" class="img-fluid" style="float: left;">&#160;&#160;<h5 style="margin-bottom: 0;">Cyprus</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="d-flex align-items-center p-2" style="border-radius: 8px;">
+                        <img src="./Design/denmark.png" width="32px" class="img-fluid" style="float: left;">&#160;&#160;<h5 style="margin-bottom: 0;">Denmark</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="d-flex align-items-center p-2" style="border-radius: 8px;">
+                        <i class="fas fa-ellipsis-h dot" style="background-color: rgb(254, 202, 110);"></i></i>&#160;&#160;<h5 style="margin-bottom: 0;">More</h5>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--end of countries-->
+
+        <!--footer-->
+        <div class="container p-5">
+            <div class="row gx-5 justify-content-evenly">
+                <div class="col-12 col-sm-3">
+                    <div class="d-flex align-items-center">
+                        <img src="./Design/restaurantLogo.png" alt="Logo" class="img-fluid" style="float:left;">
+                        <h4 style="margin: 0">Order Mob</h4>
+                    </div>
+                    <br>
+                    <small>All you need is to download one of the best food delivery apps.</small>
+                    <br>
+                    <div class="pt-4 d-flex justify-content-evenly d-sm-block">
+                        <a href="..." class="me-1"><i class="fa fa-facebook socials" style="padding: 0.5em 0.7em;"></i></a>
+                        <a href="..." class="me-1"><i class="fa fa-twitter socials"></i></a>
+                        <a href="..." class="me-1"><i class="fa fa-instagram socials" style="padding: 0.5em 0.6em;"></i></a>
+                        <a href="..." class="me-1"><i class="fa fa-youtube socials"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-2 pt-4">
+                    <h5>Service</h5>
+                    <ul class="list-unstyled pt-2">
+                        <li><small>Online order</small></li>
+                        <li><small>Pre-reservation</small></li>
+                        <li><small>24/7 Services</small></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-2 pt-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled pt-2">
+                        <li><small>Restaurants</small></li>
+                        <li><small>Reviews</small></li>
+                        <li><small>Blogs</small></li>
+                        <li><small>Order Foods</small></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-2 pt-4">
+                    <h5>About</h5>
+                    <ul class="list-unstyled pt-2">
+                        <li><small>Our Story</small></li>
+                        <li><small>Benifits</small></li>
+                        <li><small>Career</small></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-2 pt-4">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled pt-2">
+                        <li><small>Contact</small></li>
+                        <li><small>Support</small></li>
+                        <li><small>FAQ</small></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--end of footer-->
+        <div class="text-center">
+            <p>Made by Shreyas 🔥</p>
         </div>
 
         <!--Vendor js-->
