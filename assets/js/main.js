@@ -11,7 +11,8 @@ function arrow(){
     });
 }
 
-orderCarousel = $("#orderCarousel");
+var orderCarousel = $("#orderCarousel");
+var orderCarousel1 = document.getElementById('orderCarousel')
 var carousel = new bootstrap.Carousel(orderCarousel,{
     wrap: true,
 });
@@ -31,3 +32,13 @@ $("#btn3").click(function(){
     orderCarousel.carousel(2)
 });
 
+const carouselBtn = document.querySelectorAll(".btnCarousel");
+orderCarousel1.addEventListener('slid.bs.carousel', function () {
+    for(i=1 ; i<4 ; i++){
+        var classList = $("#carousel"+i).attr("class").split(/\s+/);
+        if(classList.length > 1){
+            carouselBtn.forEach(l => l.classList.remove('btnActive'))
+            $("#btn"+i).addClass('btnActive')
+        }
+    }
+})
